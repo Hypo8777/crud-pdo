@@ -1,0 +1,315 @@
+* {
+    margin         : 0;
+    padding        : 0;
+    font-family    : 'Segoe UI Emoji', sans-serif;
+    box-sizing     : border-box;
+    text-decoration: none;
+    outline        : none;
+    border         : none;
+}
+
+kbd {
+    border: 1px solid gray;
+}
+
+.wrapper {
+    height          : 100vh;
+    width           : 100vw;
+    background-color: dimgray;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+
+header,
+footer {
+    padding: 1em;
+}
+
+header h1 {
+    color: #ffff;
+}
+
+footer {
+    text-align: center;
+    color     : black;
+}
+
+.mycontent {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-evenly;
+    align-items    : stretch;
+    gap            : 1em;
+    height         : 100vh;
+}
+
+.mycontent>div {
+    padding         : 1em;
+    background-color: #fff;
+    height          : 100%;
+    border-radius   : .5em;
+}
+
+/* .content_navigator_select {} */
+
+.nav-selectors {
+    text-transform  : uppercase;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : stretch;
+    align-items     : flex-start;
+    text-align      : center;
+    border-radius   : 4px;
+    background-color: cornflowerblue;
+    overflow        : hidden;
+}
+
+.nav-selectors a {
+    width  : 100%;
+    padding: .5em;
+    color  : #fff;
+}
+
+.nav-selectors a:hover {
+    background-color: #0005;
+
+}
+
+
+.navigated_content_load form {
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : stretch;
+    align-items        : stretch;
+    gap                : 1em;
+    width              : 60vw;
+    height             : 100%;
+    /* background-color: black; */
+}
+
+
+
+
+
+
+
+
+.navigated_content_load .create-form span {
+    display       : flex;
+    flex-direction: column;
+    gap           : 4px;
+}
+
+.navigated_content_load .create-form span {
+    font-weight   : bold;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.navigated_content_load .create-form span input {
+    padding      : .7em;
+    border       : 1px solid dimgray;
+    border-radius: 4px;
+}
+
+.navigated_content_load .create-form input[type='submit'] {
+    width           : fit-content;
+    padding         : .5em;
+    border-radius   : 4px;
+    cursor          : pointer;
+    text-transform  : uppercase;
+    background-color: cornflowerblue;
+    color           : #fff;
+    font-weight     : bold;
+    letter-spacing  : 1.3px;
+}
+
+.navigated_content_load .create-form input[type='submit']:hover {
+    background-color: royalblue;
+}
+
+.msg-success {
+    width           : fit-content;
+    padding         : 5px;
+    border-radius   : 4px;
+    background-color: #63ff63;
+    color           : green;
+    font-weight     : bold;
+}
+
+.msg-fail {
+    width           : fit-content;
+    padding         : 5px;
+    border-radius   : 4px;
+    background-color: crimson;
+    color           : #fff;
+    font-weight     : bold;
+}
+
+
+
+
+
+
+
+.navigated_content_load .read-form .search_span {
+    display        : flex;
+    justify-content: stretch;
+    align-items    : center;
+    gap            : 5px;
+    font-weight    : bold;
+}
+
+.navigated_content_load .read-form .search_span label {
+    text-transform: uppercase;
+    width         : fit-content;
+}
+
+.navigated_content_load .read-form .search_span input {
+    border : none;
+    padding: .5em;
+}
+
+.navigated_content_load .read-form .search_span input[type='search'] {
+    background-color: aliceblue;
+    width           : 100%;
+}
+
+.navigated_content_load .read-form .search_span input[type='submit'] {
+    width         : fit-content;
+    text-transform: uppercase;
+}
+
+.navigated_content_load .read-form .table {
+    overflow-y   : scroll;
+    height       : 100%;
+    padding-right: 5px;
+}
+
+.navigated_content_load .read-form .table table {
+    width        : 100%;
+    /* text-align: center; */
+}
+
+.navigated_content_load .read-form .table table thead {
+    /* background-color: royalblue; */
+    position      : sticky;
+    top           : 0;
+    left          : 0;
+    width         : 100%;
+    z-index       : 1;
+    color         : royalblue;
+    letter-spacing: 1.3px;
+}
+
+.navigated_content_load .read-form .table table thead tr th {
+    font-size: 12px;
+}
+
+.navigated_content_load .read-form .table table tbody tr td {
+    color     : black;
+    font-size : 13px;
+    text-align: center;
+}
+
+.navigated_content_load .read-form .table table tbody tr td a {
+    color        : #fff;
+    border-radius: 5px;
+}
+
+.navigated_content_load .read-form .table table tbody tr td .update {
+    padding         : 3px;
+    background-color: cornflowerblue;
+}
+
+.navigated_content_load .read-form .table table tbody tr td .delete {
+    background-color: crimson;
+    padding         : 3px;
+}
+
+.navigated_content_load .read-form .table table tbody tr .actions {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    gap            : 3px;
+    align-items    : center;
+}
+
+
+
+
+
+
+
+.navigated_content_load .update-form span {
+    display       : flex;
+    flex-direction: column;
+    gap           : 4px;
+}
+
+.navigated_content_load .update-form span {
+    font-weight   : bold;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.navigated_content_load .update-form span input {
+    padding      : .7em;
+    border       : 1px solid dimgray;
+    border-radius: 4px;
+}
+
+.navigated_content_load .update-form .submit_span {
+    display       : flex;
+    flex-direction: row;
+    gap           : 1em;
+}
+
+.navigated_content_load .update-form span input[type='submit'] {
+    width           : fit-content;
+    padding         : .5em;
+    border          : none;
+    border-radius   : 4px;
+    cursor          : pointer;
+    text-transform  : uppercase;
+    background-color: cornflowerblue;
+    color           : #fff;
+    font-weight     : bold;
+    letter-spacing  : 1.3px;
+}
+
+.navigated_content_load .update-form span input[type='submit']:hover {
+    background-color: royalblue;
+}
+
+
+.delete-form a {
+    color  : #fff;
+    padding: .5em;
+}
+
+.delete-form .delete-yes {
+    width           : fit-content;
+    padding         : 5px;
+    border-radius   : 4px;
+    background-color: #63ff63;
+    color           : green;
+    font-weight     : bold;
+}
+
+.delete-form .delete-no {
+    width           : fit-content;
+    padding         : 5px;
+    border-radius   : 4px;
+    background-color: crimson;
+    color           : #fff;
+    font-weight     : bold;
+}
+
+.delete-form strong {
+    color          : crimson;
+    text-decoration: underline;
+}
