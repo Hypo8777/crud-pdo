@@ -1,2 +1,2 @@
-# crud-pdo
-PDO [Create, Read, Update, Delete] Operations
+# php-crud-pdo
+>PDO [Create, Read, Update, Delete] Operations
